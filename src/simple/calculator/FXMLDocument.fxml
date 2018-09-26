@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="743.0" prefWidth="897.0" style="-fx-background-color: aqua;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simple.calculator.FXMLDocumentController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="205.0" layoutY="28.0" text="SIMPLE CALCULATOR MATHEMATICS." textFill="#ee0f29" underline="true">
+         <font>
+            <Font name="Times New Roman Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="154.0" layoutY="161.0" text="ENTER SECOND NUMBER   :">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="154.0" layoutY="114.0" text="ENTER FIRST NUMBER   :">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="275.0" layoutY="212.0" text="THE RESULT OF CALCULATIONS   :">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtfno" alignment="CENTER" layoutX="505.0" layoutY="110.0" promptText="first number">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></TextField>
+      <TextField fx:id="txtsno" alignment="CENTER" layoutX="505.0" layoutY="157.0" promptText="second number.">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></TextField>
+      <TextField fx:id="txtans" alignment="CENTER" editable="false" layoutX="363.0" layoutY="267.0" prefHeight="49.0" prefWidth="221.0" promptText="ANSURE..">
+         <font>
+            <Font name="Times New Roman Bold" size="25.0" />
+         </font></TextField>
+      <Region layoutX="221.0" layoutY="384.0" prefHeight="140.0" prefWidth="505.0" style="-fx-background-color: white;" />
+      <Label layoutX="202.0" layoutY="334.0" text="CLICK ON THE ACTION YOU WANT TO PERFORM." textFill="#7317f5" underline="true">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="279.0" layoutY="437.0" mnemonicParsing="false" onAction="#Multiplication" style="-fx-background-color: red;" text="MULTIPLY">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="398.0" layoutY="437.0" mnemonicParsing="false" onAction="#handleAddition" style="-fx-background-color: magenta;" text="ADDITION">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="514.0" layoutY="437.0" mnemonicParsing="false" onAction="#handleSubtraction" style="-fx-background-color: green;" text="SUBTRACTION.">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="label" alignment="CENTER" layoutX="245.0" layoutY="573.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="409.0" text="NO ACTION CLIKED YET." textFill="#eb031e">
+         <font>
+            <Font name="Times New Roman Bold" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
